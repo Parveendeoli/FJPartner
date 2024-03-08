@@ -10,12 +10,7 @@ public class Group extends App{
 	public void CreateGroup() throws InterruptedException
     {
 		WebDriver driver = this.driver;
-//        ChromeDriver driver = new ChromeDriver(); 
-//        driver.get("http://13.64.144.136/qa/account/login");
-//        driver.manage().window().maximize();
-//        driver.findElement(By.xpath("//input[@type='email']")).sendKeys("parveen@filejet.com");
-//        driver.findElement(By.xpath("//input[@type='password']")).sendKeys("123456");
-//        driver.findElement(By.xpath("//button[@type='submit']")).click();
+//        
         Thread.sleep(2000);
 
         driver.findElement(By.xpath("//ul[@class='menu-link p-0 m-0']/li[3]")).click();

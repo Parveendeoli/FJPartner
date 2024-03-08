@@ -1,7 +1,6 @@
 package fjportal;
 
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
@@ -15,17 +14,8 @@ public class CreateNewEntity extends App {
 	{
 		
 		WebDriver driver = this.driver;
-//		WebDriver driver = new ChromeDriver();
-//		
-//		driver.get("http://13.64.144.136/qa/account/login");
-//        driver.manage().window().maximize();
-//        driver.findElement(By.xpath("//input[@type='email']")).sendKeys("parveen@filejet.com");
-//        driver.findElement(By.xpath("//input[@type='password']")).sendKeys("123456");
-//        driver.findElement(By.xpath("//button[@type='submit']")).click();
-        
-		
-
-        //create new entity
+   
+		//create new entity
         Thread.sleep(2000);
         driver.findElement(By.xpath("//div[@class='d-flex justify-content-between align-items-end pt-4 mt-4']")).click();
         driver.findElement(By.xpath("//a[@class='btn btn-info px-4 rounded-3 text-uppercase w-100 d-flex align-items-center']")).click();
