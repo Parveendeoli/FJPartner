@@ -8,7 +8,7 @@ import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.Test;
 import org.openqa.selenium.JavascriptExecutor;
 
-public class Login extends App {
+public class CreateNewEntity extends App {
 	
 	@Test
 	public void createEntity() throws InterruptedException
@@ -43,7 +43,7 @@ public class Login extends App {
         Select select1 = new Select(ddown1);
         select1.selectByIndex(5);
 
-        driver.findElement(By.xpath("//input[@name='name']")).sendKeys("Auto Entity 1");
+        driver.findElement(By.xpath("//input[@name='name']")).sendKeys("Automation Entity I");
         Thread.sleep(200);
 
         WebElement ddown2 = driver.findElement(By.id("type"));
