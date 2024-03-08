@@ -84,6 +84,35 @@ public class AddExistingDBA extends App {
 
         driver.findElement(By.xpath("//td[@class ='day'][3]")).click();   //temporary solution - 
         driver.findElement(By.xpath("//button[@class ='btn btn-info py-3 px-5 rounded-3 ms-3 new_entity']")).click();
+        Thread.sleep(3000);
+        
+        driver.findElement(By.id("fictitious-trade-name-tab")).click();
+        Thread.sleep(3000);
+        
+        WebElement flag2 = driver.findElement(By.xpath("//button[@class='confirm-submit btn btn-info py-3 px-5 rounded-3 ms-3 action-btn-list confirm-final-submit-btn']"));
+        js.executeScript("arguments[0].scrollIntoView();",flag2);
+        
+        driver.findElement(By.xpath("//input[@class='form-control input-datepicker dba-last-renewal-date dba-dates']")).click();
+        Thread.sleep(3000);
+               
+        driver.findElement(By.xpath("//td[@class ='day'][3]")).click();
+        
+        Thread.sleep(3000);
+        
+        driver.findElement(By.xpath("//input[@class='form-control input-datepicker']")).click();
+        Thread.sleep(3000);
+        
+        driver.findElement(By.xpath("//td[@class ='day'][3]")).click();
+        Thread.sleep(2000);
+        
+        driver.findElement(By.xpath("//html[1]/body[1]/div[1]/div[1]/div[2]/div[2]/div[1]/form[1]/div[2]/div[3]/div[2]/div[17]/div[2]/div[1]/div[1]/input[1]")).sendKeys("FJ");
+        driver.findElement(By.xpath("/html[1]/body[1]/div[1]/div[1]/div[2]/div[2]/div[1]/form[1]/div[2]/div[3]/div[2]/div[18]/div[2]/div[1]/div[1]/input[1]")).sendKeys("FJ Team");
+        driver.findElement(By.xpath("//button[@class='confirm-submit btn btn-info py-3 px-5 rounded-3 ms-3 action-btn-list confirm-final-submit-btn']")).click();
+        Thread.sleep(3000);
+        
+        WebElement flag3 = driver.findElement(By.xpath("//button[@class='btn btn-info py-3 px-5 rounded-3 ms-3 entity-order-submit-btn']"));
+        js.executeScript("arguments[0].scrollIntoView();",flag3);
+        driver.findElement(By.xpath("//button[@class='btn btn-info py-3 px-5 rounded-3 ms-3 entity-order-submit-btn']")).click();
 
 
 

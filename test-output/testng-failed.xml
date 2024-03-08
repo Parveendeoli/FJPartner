@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="fjportal.CreateNewEntity">
+      <class name="fjportal.AddExistingDBA">
         <methods>
-          <include name="createEntity"/>
+          <include name="AddDBA"/>
         </methods>
-      </class> <!-- fjportal.CreateNewEntity -->
+      </class> <!-- fjportal.AddExistingDBA -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
