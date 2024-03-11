@@ -3,6 +3,7 @@ package fjportal;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.Test;
 import org.openqa.selenium.JavascriptExecutor;
@@ -15,6 +16,13 @@ public class AddExistingDBA extends App {
 		WebDriver driver = this.driver;
 		//String month = "March 2019";
         //String day = "20";
+		
+//		WebDriver driver = new ChromeDriver();
+//		driver.get("http://13.64.144.136/qa/account/login");
+//		driver.manage().window().maximize();
+//		driver.findElement(By.xpath("//input[@type='email']")).sendKeys("parveen@filejet.com");
+//		driver.findElement(By.xpath("//input[@type='password']")).sendKeys("123456");
+//		driver.findElement(By.xpath("//button[@type='submit']")).click();
 
         Thread.sleep(2000);
 
@@ -113,6 +121,7 @@ public class AddExistingDBA extends App {
         WebElement flag3 = driver.findElement(By.xpath("//button[@class='btn btn-info py-3 px-5 rounded-3 ms-3 entity-order-submit-btn']"));
         js.executeScript("arguments[0].scrollIntoView();",flag3);
         driver.findElement(By.xpath("//button[@class='btn btn-info py-3 px-5 rounded-3 ms-3 entity-order-submit-btn']")).click();
+        driver.close();
 
 
 

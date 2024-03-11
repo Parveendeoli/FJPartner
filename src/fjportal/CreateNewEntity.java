@@ -3,16 +3,22 @@ package fjportal;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.Test;
 import org.openqa.selenium.JavascriptExecutor;
 
-public class CreateNewEntity extends App {
+public class CreateNewEntity extends App  {
 	
 	@Test
 	public void createEntity() throws InterruptedException
 	{
-		
+//		WebDriver driver = new ChromeDriver();
+//		driver.get("http://13.64.144.136/qa/account/login");
+//		driver.manage().window().maximize();
+//		driver.findElement(By.xpath("//input[@type='email']")).sendKeys("parveen@filejet.com");
+//		driver.findElement(By.xpath("//input[@type='password']")).sendKeys("123456");
+//		driver.findElement(By.xpath("//button[@type='submit']")).click();
 		WebDriver driver = this.driver;
    
 		//create new entity
@@ -86,8 +92,10 @@ public class CreateNewEntity extends App {
                 
         driver.findElement(By.id("entity-order-submit-btn")).click();
 
-        Thread.sleep(15000);
-
+        Thread.sleep(3000);
+        
+       // driver.findElement(By.xpath("//a[@class='btn btn-info px-5 py-3 rounded-3 ms-3']")).click();
+        
         driver.close();
 
     }
