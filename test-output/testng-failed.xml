@@ -6,16 +6,13 @@
       <class name="fjportal.Group">
         <methods>
           <include name="CreateGroup"/>
+          <include name="App"/>
         </methods>
       </class> <!-- fjportal.Group -->
-      <class name="fjportal.CreateNewEntity">
-        <methods>
-          <include name="createEntity"/>
-        </methods>
-      </class> <!-- fjportal.CreateNewEntity -->
       <class name="fjportal.AddExistingDBA">
         <methods>
           <include name="AddDBA"/>
+          <include name="App"/>
         </methods>
       </class> <!-- fjportal.AddExistingDBA -->
     </classes>
