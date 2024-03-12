@@ -3,7 +3,6 @@ package fjportal;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.Test;
 import org.openqa.selenium.JavascriptExecutor;
@@ -13,7 +12,7 @@ public class AddExistingDBA extends App {
 	@Test
 	public void AddDBA() throws InterruptedException
 	{
-		WebDriver driver = this.driver;
+		//WebDriver driver = this.driver;
 		//String month = "March 2019";
         //String day = "20";
 		

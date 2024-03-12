@@ -1,14 +1,17 @@
 package fjportal;
 
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.Test;
 import org.openqa.selenium.JavascriptExecutor;
 
 public class CreateNewEntity extends App  {
+	
+	public CreateNewEntity() throws InterruptedException {
+		super();
+		// TODO Auto-generated constructor stub
+	}
 	
 	@Test
 	public void createEntity() throws InterruptedException
@@ -19,7 +22,10 @@ public class CreateNewEntity extends App  {
 //		driver.findElement(By.xpath("//input[@type='email']")).sendKeys("parveen@filejet.com");
 //		driver.findElement(By.xpath("//input[@type='password']")).sendKeys("123456");
 //		driver.findElement(By.xpath("//button[@type='submit']")).click();
-		WebDriver driver = this.driver;
+		//WebDriver driver = this.driver;
+		
+		driver.getCurrentUrl();
+		System.out.println("p2");
    
 		//create new entity
         Thread.sleep(2000);

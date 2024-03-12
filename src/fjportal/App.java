@@ -3,13 +3,19 @@ package fjportal;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Reporter;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Test;
 
+
+@Test
 public class App {
 	
-	public WebDriver driver;
+	public static WebDriver driver;
 
 	
-	public App()
+	@BeforeTest	
+	public void App() throws InterruptedException
 	{
 		WebDriver driver = new ChromeDriver();
 		
@@ -18,7 +24,10 @@ public class App {
         driver.findElement(By.xpath("//input[@type='email']")).sendKeys("parveen@filejet.com");
         driver.findElement(By.xpath("//input[@type='password']")).sendKeys("123456");
         driver.findElement(By.xpath("//button[@type='submit']")).click();
-        this.driver = driver;
+        Thread.sleep(6000);
+        Reporter.log("Login Successful", true);
+        
+       // this.driver = driver;
 	}
 	
 
