@@ -30,8 +30,7 @@ public class CreateNewEntity extends App  {
 		
 		driver.getCurrentUrl();
 		System.out.println("p2");
-		
-		
+
 		//create new entity
         Thread.sleep(2000);
         driver.findElement(By.xpath("//div[@class='d-flex justify-content-between align-items-end pt-4 mt-4']")).click();
