@@ -17,7 +17,7 @@ public class App {
 	@BeforeTest	
 	public void App() throws InterruptedException
 	{
-		WebDriver driver = new ChromeDriver();
+		driver = new ChromeDriver();
 		
 		driver.get("http://13.64.144.136/qa/account/login");
         driver.manage().window().maximize();

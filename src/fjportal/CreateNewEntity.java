@@ -102,7 +102,7 @@ public class CreateNewEntity extends App  {
         
        // driver.findElement(By.xpath("//a[@class='btn btn-info px-5 py-3 rounded-3 ms-3']")).click();
         
-        driver.close();
+       // driver.close();
 
     }
     

@@ -1,8 +1,6 @@
 package fjportal;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
 
 public class Group extends App {
@@ -16,8 +14,9 @@ public class Group extends App {
 //		driver.findElement(By.xpath("//input[@type='email']")).sendKeys("parveen@filejet.com");
 //		driver.findElement(By.xpath("//input[@type='password']")).sendKeys("123456");
 //		driver.findElement(By.xpath("//button[@type='submit']")).click();
-		WebDriver driver = this.driver;
+		//WebDriver driver = this.driver;
 
+		driver.findElement(By.xpath("//ul[@class='menu-link p-0 m-0']/li[3]")).click();
         Thread.sleep(2000);
 
         driver.findElement(By.xpath("//ul[@class='menu-link p-0 m-0']/li[3]")).click();
