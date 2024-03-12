@@ -3,9 +3,12 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-      <class name="fjportal.CreateNewEntity"/>
-      <class name="fjportal.Group"/>
-      <class name="fjportal.AddExistingDBA"/>
+		
+	<!--	<class name="fjportal.RegisteredAgent"/> -->
+	<class name="fjportal.CreateNewEntity"/>
+     <class name="fjportal.CreateNewExisitingEntity" dependsOnMethods="fjportal.CreateNewEntity" />
+     <class name="fjportal.RegisteredAgent" dependsOnMethods="fjportal.CreateNewExisitingEntity"/>
+  
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

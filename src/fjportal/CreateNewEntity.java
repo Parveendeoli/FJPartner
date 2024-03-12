@@ -11,6 +11,8 @@ import org.openqa.selenium.support.ui.Select;
 import org.testng.Reporter;
 import org.testng.annotations.Test;
 import org.openqa.selenium.JavascriptExecutor;
+import java.util.UUID;
+
 
 public class CreateNewEntity extends App  {
 	
@@ -20,7 +22,7 @@ public class CreateNewEntity extends App  {
 	}
 
 	@Test
-	public void createEntity() throws InterruptedException
+	public void CreateNewEntity() throws InterruptedException
 	{
 //		WebDriver driver = new ChromeDriver();
 //		driver.get("http://13.64.144.136/qa/account/login");
@@ -51,8 +53,14 @@ public class CreateNewEntity extends App  {
         WebElement ddown1 = driver.findElement(By.id("entity_state"));
         Select select1 = new Select(ddown1);
         select1.selectByIndex(5);
+        
+     // Generate a unique key
+        String uniqueName = "Automation Entity. " + UUID.randomUUID().toString();
 
-        driver.findElement(By.xpath("//input[@name='name']")).sendKeys("Automation Entity I");
+        // Send the unique key as the name to the input field
+        driver.findElement(By.xpath("//input[@id='name']")).sendKeys(uniqueName);
+
+       // driver.findElement(By.xpath("//input[@name='name']")).sendKeys("Automation Entity I");
         Thread.sleep(200);
 
         WebElement ddown2 = driver.findElement(By.id("type"));
@@ -101,16 +109,22 @@ public class CreateNewEntity extends App  {
         driver.findElement(By.name("organizer_name_1")).sendKeys("FJ Agent");
         driver.findElement(By.xpath("//button[@class='confirm-submit btn btn-info py-3 px-5 rounded-3 ms-3 action-btn-list confirm-final-submit-btn']")).click();
 
-        Thread.sleep(15000);
+        Thread.sleep(2000);
                 
-        driver.findElement(By.id("entity-order-submit-btn")).click();
-
-        Thread.sleep(3000);
+        // .......Submit Slideout......//
+        driver.findElement(By.xpath("//input[@id='payment-type-pay_later']")).click();
+        driver.findElement(By.xpath("//button[@id='entity-order-submit-btn']")).click();
+        System.out.println("Payment Details entered...");
+        Thread.sleep(6000);
+        //driver.findElement(By.xpath("//a[normalize-space()='PERFORM ANOTHER']")).click();
+        driver.findElement(By.xpath("//a[@class='btn btn-info px-5 py-3 rounded-3 ms-3']")).click();
         Reporter.log("New Entity created Successful", true);
+        
+        Thread.sleep(6000);
         
        // driver.findElement(By.xpath("//a[@class='btn btn-info px-5 py-3 rounded-3 ms-3']")).click();
         
-        driver.close();
+       // driver.close();
 
     }
     
