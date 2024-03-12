@@ -1,8 +1,13 @@
 package fjportal;
 
+import org.openqa.selenium.WebDriver;
+
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
+import org.testng.Reporter;
 import org.testng.annotations.Test;
 import org.openqa.selenium.JavascriptExecutor;
 
@@ -12,7 +17,6 @@ public class CreateNewEntity extends App  {
 		super();
 		// TODO Auto-generated constructor stub
 	}
-	
 	@Test
 	public void createEntity() throws InterruptedException
 	{
@@ -26,7 +30,8 @@ public class CreateNewEntity extends App  {
 		
 		driver.getCurrentUrl();
 		System.out.println("p2");
-   
+		
+		
 		//create new entity
         Thread.sleep(2000);
         driver.findElement(By.xpath("//div[@class='d-flex justify-content-between align-items-end pt-4 mt-4']")).click();
@@ -99,6 +104,7 @@ public class CreateNewEntity extends App  {
         driver.findElement(By.id("entity-order-submit-btn")).click();
 
         Thread.sleep(3000);
+        Reporter.log("New Entity created Successful", true);
         
        // driver.findElement(By.xpath("//a[@class='btn btn-info px-5 py-3 rounded-3 ms-3']")).click();
         

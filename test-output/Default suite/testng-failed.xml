@@ -4,6 +4,14 @@
   <test thread-count="5" name="Default test(failed)">
     <classes>
       <class name="fjportal.Group">
+<<<<<<< HEAD
+=======
+        <methods>
+          <include name="CreateGroup"/>
+        </methods>
+      </class> <!-- fjportal.Group -->
+      <class name="fjportal.AddExistingDBA">
+>>>>>>> 61977e96aac830fd047bca7ac735cd8dfe3fe087
         <methods>
           <include name="CreateGroup"/>
           <include name="App"/>

@@ -15,7 +15,7 @@ public class AddExistingDBA extends App {
 		//String month = "March 2019";
         //String day = "20";
 		
-//		WebDriver driver = new ChromeDriver();
+		WebDriver driver = new ChromeDriver();
 //		driver.get("http://13.64.144.136/qa/account/login");
 //		driver.manage().window().maximize();
 //		driver.findElement(By.xpath("//input[@type='email']")).sendKeys("parveen@filejet.com");
