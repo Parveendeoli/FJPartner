@@ -9,10 +9,34 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Suite</th></tr>
-<tr><td><a href="#t0">Test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">54,164</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">4</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">131,635</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">fjportal.RegisteredAgent</td><td><a href="#m0">RegisteredAgent</a></td><td rowspan="1">1710260855214</td><td rowspan="1">28332</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">fjportal.RegisteredAgent</td><td><a href="#m0">RegisteredAgent</a></td><td rowspan="1">1710576879221</td><td rowspan="1">25300</td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">fjportal.AdminPortal.PartnerView</td><td><a href="#m1">AdminPortalLogin</a></td><td rowspan="1">1710576904525</td><td rowspan="1">15871</td></tr><tr class="passedeven"><td><a href="#m2">PartnerView</a></td><td rowspan="1">1710576920402</td><td rowspan="1">11908</td></tr><tr class="passedodd"><td rowspan="2">fjportal.CreateNewExisitingEntity</td><td><a href="#m3">CreateNewEntity</a></td><td rowspan="1">1710576817229</td><td rowspan="1">35613</td></tr><tr class="passedodd"><td><a href="#m4">CreateNewExisitingEntity</a></td><td rowspan="1">1710576852852</td><td rowspan="1">26364</td></tr></tbody>
 </table>
-<h2>Test</h2><h3 id="m0">fjportal.RegisteredAgent#RegisteredAgent</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">RA Order Submitted Successful</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Test</h2><h3 id="m0">fjportal.RegisteredAgent#RegisteredAgent</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=122.0.6261.95)
+Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [7dcb7ff75a9ac1e3a81157d14ae9de8a, clickElement {id=f.34066DEBC190B52F1082CA03490604AD.d.AEB1BE626DDBD85CC1BB79F5C711F62A.e.34202}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.95, chrome: {chromedriverVersion: 122.0.6261.128 (f18a44fedeb..., userDataDir: C:\Users\DELL\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55298}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55298/devtoo..., se:cdpVersion: 122.0.6261.95, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (7dcb7ff75a9ac1e3a81157d14ae9de8a)] -&gt; xpath: //a[@class=&apos;btn btn-info px-5 py-3 rounded-3 ms-3&apos;]]
+Session ID: 7dcb7ff75a9ac1e3a81157d14ae9de8a
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at fjportal.RegisteredAgent.RegisteredAgent(RegisteredAgent.java:38)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">fjportal.AdminPortal.PartnerView#AdminPortalLogin</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Admin Portsl Login Successful</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">fjportal.AdminPortal.PartnerView#PartnerView</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Partner View opened Successful</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">fjportal.CreateNewExisitingEntity#CreateNewEntity</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">New Entity created Successful</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">fjportal.CreateNewExisitingEntity#CreateNewExisitingEntity</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">New Existing Entity created Successful</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

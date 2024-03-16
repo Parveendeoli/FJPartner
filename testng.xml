@@ -4,11 +4,24 @@
   <test thread-count="5" name="Test">
     <classes>
 		
-	<!--	<class name="fjportal.RegisteredAgent"/> -->
-	<class name="fjportal.CreateNewEntity"/>
+	<!--	<class name="fjportal.RegisteredAgent"/>
+< 	<class name="fjportal.CreateNewEntity"/>-->
      <class name="fjportal.CreateNewExisitingEntity" dependsOnMethods="fjportal.CreateNewEntity" />
-     <class name="fjportal.RegisteredAgent" dependsOnMethods="fjportal.CreateNewExisitingEntity"/>
+    <class name="fjportal.RegisteredAgent" dependsOnMethods="fjportal.CreateNewExisitingEntity"/>
+     		  <!--  <class name="fjportal.AdminPortal.AdminPortalLogin"/> -->
+     		    <class name="fjportal.AdminPortal.PartnerView" dependsOnMethods="fjportal.AdminPortalLogin"/>
+     		  <!--  <class name="fjportal.AdminPortal.BusinessLicence"  dependsOnMethods="fjportal.PartnerView"/> -->
+
   
     </classes>
+    
+    
   </test> <!-- Test -->
+ <!-- <test>
+	  <classes>
+		    <class name="fjportal.AdminPortalLogin"/>
+
+	  </classes>
+
+  </test>-->
 </suite> <!-- Suite -->

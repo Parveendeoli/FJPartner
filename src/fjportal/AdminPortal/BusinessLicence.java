@@ -1,15 +1,15 @@
-package fjportal;
+package fjportal.AdminPortal;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.testng.Reporter;
 import org.testng.annotations.Test;
 
-public class RegisteredAgent extends App {
+public class BusinessLicence extends PartnerView {
 
-
+	
 	@Test
-	public void RegisteredAgent() throws InterruptedException {
+	public void BusinessLicence() throws InterruptedException {
 		// TODO Auto-generated method stub
     
     Thread.sleep(4000);
@@ -18,12 +18,12 @@ public class RegisteredAgent extends App {
 		System.out.println(driver.getCurrentUrl());
 		
 		//Navigate to RA
-		driver.findElement(By.xpath("//a[@href='/qa/registered-agents']//span[@class='text nav-text position-relative']")).click();
+		driver.findElement(By.xpath("//span[normalize-space()='Business License']")).click();
 	    Thread.sleep(4000);
 
-		driver.findElement(By.xpath("//a[@id='ra-other-tab']")).click();
+		driver.findElement(By.xpath("//span[normalize-space()='Add New']")).click();
 		Thread.sleep(4000);
-        driver.findElement(By.xpath("//tbody/tr[1]/td[5]/div[1]/a[1]")).click();
+        driver.findElement(By.xpath("//span[@aria-expanded='true']//span[@role='presentation']")).click();
 		driver.findElement(By.xpath("//a[@id='general-info-tab']")).click();
 		driver.findElement(By.xpath("//button[@id='confirm-final-submit']")).click();
 		 Thread.sleep(4000);
@@ -38,5 +38,4 @@ public class RegisteredAgent extends App {
       //button[@id='entity-order-submit-btn']
 		driver.close();
 	}
-
 }

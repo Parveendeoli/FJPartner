@@ -1,33 +1,135 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="1" total="6" passed="4" failed="1" skipped="0">
   <reporter-output>
     <line>
       <![CDATA[Login Successful]]>
     </line>
     <line>
-      <![CDATA[RA Order Submitted Successful]]>
+      <![CDATA[New Entity created Successful]]>
+    </line>
+    <line>
+      <![CDATA[New Existing Entity created Successful]]>
+    </line>
+    <line>
+      <![CDATA[Admin Portsl Login Successful]]>
+    </line>
+    <line>
+      <![CDATA[Partner View opened Successful]]>
     </line>
   </reporter-output>
-  <suite started-at="2024-03-12T21:57:09 IST" name="Suite" finished-at="2024-03-12T21:58:03 IST" duration-ms="54164">
+  <suite started-at="2024-03-16T13:43:20 IST" name="Suite" finished-at="2024-03-16T13:45:32 IST" duration-ms="131635">
     <groups>
     </groups>
-    <test started-at="2024-03-12T21:57:09 IST" name="Test" finished-at="2024-03-12T21:58:03 IST" duration-ms="54164">
+    <test started-at="2024-03-16T13:43:20 IST" name="Test" finished-at="2024-03-16T13:45:32 IST" duration-ms="131635">
       <class name="fjportal.RegisteredAgent">
-        <test-method is-config="true" signature="App()[pri:0, instance:fjportal.RegisteredAgent@7ec7ffd3]" started-at="2024-03-12T21:57:09 IST" name="App" finished-at="2024-03-12T21:57:35 IST" duration-ms="25789" status="PASS">
+        <test-method signature="RegisteredAgent()[pri:0, instance:fjportal.RegisteredAgent@72d1ad2e]" started-at="2024-03-16T13:44:39 IST" name="RegisteredAgent" finished-at="2024-03-16T13:45:04 IST" duration-ms="25300" status="FAIL">
+          <exception class="org.openqa.selenium.ElementNotInteractableException">
+            <message>
+              <![CDATA[element not interactable
+  (Session info: chrome=122.0.6261.95)
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [7dcb7ff75a9ac1e3a81157d14ae9de8a, clickElement {id=f.34066DEBC190B52F1082CA03490604AD.d.AEB1BE626DDBD85CC1BB79F5C711F62A.e.34202}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.95, chrome: {chromedriverVersion: 122.0.6261.128 (f18a44fedeb..., userDataDir: C:\Users\DELL\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55298}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55298/devtoo..., se:cdpVersion: 122.0.6261.95, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (7dcb7ff75a9ac1e3a81157d14ae9de8a)] -> xpath: //a[@class='btn btn-info px-5 py-3 rounded-3 ms-3']]
+Session ID: 7dcb7ff75a9ac1e3a81157d14ae9de8a]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=122.0.6261.95)
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [7dcb7ff75a9ac1e3a81157d14ae9de8a, clickElement {id=f.34066DEBC190B52F1082CA03490604AD.d.AEB1BE626DDBD85CC1BB79F5C711F62A.e.34202}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.95, chrome: {chromedriverVersion: 122.0.6261.128 (f18a44fedeb..., userDataDir: C:\Users\DELL\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55298}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55298/devtoo..., se:cdpVersion: 122.0.6261.95, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (7dcb7ff75a9ac1e3a81157d14ae9de8a)] -> xpath: //a[@class='btn btn-info px-5 py-3 rounded-3 ms-3']]
+Session ID: 7dcb7ff75a9ac1e3a81157d14ae9de8a
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+at fjportal.RegisteredAgent.RegisteredAgent(RegisteredAgent.java:38)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RegisteredAgent -->
+      </class> <!-- fjportal.RegisteredAgent -->
+      <class name="fjportal.CreateNewExisitingEntity">
+        <test-method is-config="true" signature="App()[pri:0, instance:fjportal.CreateNewExisitingEntity@dd8ba08]" started-at="2024-03-16T13:43:20 IST" name="App" finished-at="2024-03-16T13:43:37 IST" duration-ms="16528" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Login Successful]]>
             </line>
           </reporter-output>
         </test-method> <!-- App -->
-        <test-method signature="RegisteredAgent()[pri:0, instance:fjportal.RegisteredAgent@7ec7ffd3]" started-at="2024-03-12T21:57:35 IST" name="RegisteredAgent" finished-at="2024-03-12T21:58:03 IST" duration-ms="28332" status="PASS">
+        <test-method signature="CreateNewEntity()[pri:0, instance:fjportal.CreateNewExisitingEntity@dd8ba08]" started-at="2024-03-16T13:43:37 IST" name="CreateNewEntity" finished-at="2024-03-16T13:44:12 IST" duration-ms="35613" status="PASS">
           <reporter-output>
             <line>
-              <![CDATA[RA Order Submitted Successful]]>
+              <![CDATA[New Entity created Successful]]>
             </line>
           </reporter-output>
-        </test-method> <!-- RegisteredAgent -->
-      </class> <!-- fjportal.RegisteredAgent -->
+        </test-method> <!-- CreateNewEntity -->
+        <test-method signature="CreateNewExisitingEntity()[pri:0, instance:fjportal.CreateNewExisitingEntity@dd8ba08]" started-at="2024-03-16T13:44:12 IST" name="CreateNewExisitingEntity" finished-at="2024-03-16T13:44:39 IST" duration-ms="26364" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[New Existing Entity created Successful]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- CreateNewExisitingEntity -->
+      </class> <!-- fjportal.CreateNewExisitingEntity -->
+      <class name="fjportal.AdminPortal.PartnerView">
+        <test-method signature="AdminPortalLogin()[pri:0, instance:fjportal.AdminPortal.PartnerView@2d7275fc]" started-at="2024-03-16T13:45:04 IST" name="AdminPortalLogin" finished-at="2024-03-16T13:45:20 IST" duration-ms="15871" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Admin Portsl Login Successful]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- AdminPortalLogin -->
+        <test-method signature="PartnerView()[pri:0, instance:fjportal.AdminPortal.PartnerView@2d7275fc]" started-at="2024-03-16T13:45:20 IST" name="PartnerView" finished-at="2024-03-16T13:45:32 IST" duration-ms="11908" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Partner View opened Successful]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- PartnerView -->
+      </class> <!-- fjportal.AdminPortal.PartnerView -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>
