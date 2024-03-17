@@ -1,26 +1,37 @@
 package fjportal;
 
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
+
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
+import org.testng.Reporter;
+import org.testng.annotations.Test;
 import org.openqa.selenium.JavascriptExecutor;
 
-public class Login {
-
-	public static void main(String[] args) throws InterruptedException {
+public class CreateNewEntity extends App  {
+	
+	public CreateNewEntity() throws InterruptedException {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+	@Test
+	public void createEntity() throws InterruptedException
+	{
+//		WebDriver driver = new ChromeDriver();
+//		driver.get("http://13.64.144.136/qa/account/login");
+//		driver.manage().window().maximize();
+//		driver.findElement(By.xpath("//input[@type='email']")).sendKeys("parveen@filejet.com");
+//		driver.findElement(By.xpath("//input[@type='password']")).sendKeys("123456");
+//		driver.findElement(By.xpath("//button[@type='submit']")).click();
+		//WebDriver driver = this.driver;
 		
-		WebDriver driver = new ChromeDriver();
-		
-		driver.get("http://13.64.144.136/qa/account/login");
-        driver.manage().window().maximize();
-        driver.findElement(By.xpath("//input[@type='email']")).sendKeys("parveen@filejet.com");
-        driver.findElement(By.xpath("//input[@type='password']")).sendKeys("123456");
-        driver.findElement(By.xpath("//button[@type='submit']")).click();
-        
+		driver.getCurrentUrl();
+		System.out.println("p2");
 
-        //create new entity
+		//create new entity
         Thread.sleep(2000);
         driver.findElement(By.xpath("//div[@class='d-flex justify-content-between align-items-end pt-4 mt-4']")).click();
         driver.findElement(By.xpath("//a[@class='btn btn-info px-4 rounded-3 text-uppercase w-100 d-flex align-items-center']")).click();
@@ -38,7 +49,7 @@ public class Login {
         Select select1 = new Select(ddown1);
         select1.selectByIndex(5);
 
-        driver.findElement(By.xpath("//input[@name='name']")).sendKeys("Auto Entity 1");
+        driver.findElement(By.xpath("//input[@name='name']")).sendKeys("Automation Entity I");
         Thread.sleep(200);
 
         WebElement ddown2 = driver.findElement(By.id("type"));
@@ -91,9 +102,12 @@ public class Login {
                 
         driver.findElement(By.id("entity-order-submit-btn")).click();
 
-        Thread.sleep(15000);
-
-        driver.close();
+        Thread.sleep(3000);
+        Reporter.log("New Entity created Successful", true);
+        
+       // driver.findElement(By.xpath("//a[@class='btn btn-info px-5 py-3 rounded-3 ms-3']")).click();
+        
+       // driver.close();
 
     }
     
